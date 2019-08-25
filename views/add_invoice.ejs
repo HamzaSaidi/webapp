@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/add_invoice.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-style-8">
+        <center>
+            <h2>Ajouter facture</h2>
+        </center>
+        <form>
+            <input type="number" name="num_facture" placeholder="numéro de facture" />
+            <input type="number" name="montant" placeholder="montant" />
+
+            <select name="societe">
+                <option value="societe" disabled selected>sociéte</option>
+                <option value="sonede">sonede</option>
+                <option value="steg">steg</option>
+                <option value="telecom">telecom</option>
+            </select>
+            <input type="date" name="field3" placeholder="date" />
+            <center> <input type="button" value="enregistrer" />
+            </center>
+        </form>
+    </div>
+    </form>
+</body>
+<script type="text/javascript">
+    //auto expand textarea
+    function adjust_textarea(h) {
+        h.style.height = "20px";
+        h.style.height = (h.scrollHeight) + "px";
+    }
+</script>
+
+</html>
