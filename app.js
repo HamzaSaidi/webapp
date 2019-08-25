@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var usersRouter = require('./routes/users');
+var adminRouter = require('./routes/admin');
 var authRouter=require('./routes/auth')
 var app = express();
 var passport = require('passport')
@@ -41,7 +41,7 @@ app.use(require('express-session')({
 app.use(passport.initialize())
 app.use(passport.session())
  
-app.use('/users', usersRouter);
+app.use('/admin', adminRouter);
 app.use('/auth',authRouter)
 
 

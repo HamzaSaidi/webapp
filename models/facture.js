@@ -30,7 +30,8 @@ module.exports = function(sequelize, DataTypes) {
     },
     etat: {
       type: DataTypes.STRING(255),
-      allowNull: false
+      allowNull: false,
+      defaultValue: "non payé"
     }
   }, {
     tableName: 'facture'

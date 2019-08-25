@@ -14,18 +14,19 @@
         <center>
             <h2>Ajouter facture</h2>
         </center>
-        <form>
-            <input type="number" name="num_facture" placeholder="numéro de facture" />
-            <input type="number" name="montant" placeholder="montant" />
+        <form method="POST" action="/admin/add">
+            <input type="number" name="num_facture" placeholder="numéro de facture" required/>
+            <input type="number" name="montant" placeholder="montant" required/>
 
-            <select name="societe">
+            <select name="societe" required>
                 <option value="societe" disabled selected>sociéte</option>
-                <option value="sonede">sonede</option>
-                <option value="steg">steg</option>
-                <option value="telecom">telecom</option>
+                <option value=3>sonede</option>
+                <option value=2>steg</option>
+                <option value=1>telecom</option>
             </select>
-            <input type="date" name="field3" placeholder="date" />
-            <center> <input type="button" value="enregistrer" />
+            <input type="date" name="datefacture" placeholder="date" required/>
+            <center> 
+                <input type="submit" value="enregistrer" />
             </center>
         </form>
     </div>

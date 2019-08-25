@@ -21,7 +21,7 @@ if(!req.user){res.render('login');}
 //post login credentials
 
 router.post('/login', passport.authenticate('local-login', {
-    successRedirect: '/users/add',
+    successRedirect: '/admin/add',
     failureRedirect: '/auth/login',
     
 }));
